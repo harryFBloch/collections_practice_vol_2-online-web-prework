@@ -90,4 +90,3 @@ def organize_schools(collection)
     by_location
 end
 
-
