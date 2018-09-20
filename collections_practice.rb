@@ -75,13 +75,17 @@ def find_cool(collection)
 end
 
 def organize_schools(collection)
-  newCollection = {}
-  collection.each { |data| 
-    puts "location = #{data[0]} school = #{data[0]}"
-    key = data[1].to_s
-    newCollection[key] << data[0].to_s
-  }
-   newCollection
+   by_location = {}
+    schools.each do |school, location_hash|
+      location_hash.each do |symbol, location|
+        if by_location[location] == nil
+          by_location[location] = [school]
+        else
+          by_location[location] << school
+        end
+      end
+    end
+    by_location
 end
 
 schools =
