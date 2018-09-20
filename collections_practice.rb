@@ -79,7 +79,7 @@ def organize_schools(collection)
   collection.each {|data| 
     puts "location = #{data[1]} school = #{data[0]}"
     key = data[1].to_s
-    newCollection[:key] = data[0].to_s
+    newCollection[key] = data[0].to_s
   }
   puts newCollection
 end
