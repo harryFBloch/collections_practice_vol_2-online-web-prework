@@ -79,6 +79,7 @@ def organize_schools(collection)
     collection.each do |school, location_hash|
       puts location_hash
       location_hash.each do |symbol, location|
+        puts symbol
         if by_location[location] == nil
           by_location[location] = [school]
         else
