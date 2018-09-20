@@ -81,7 +81,7 @@ def organize_schools(collection)
     key = data[1].to_s
     newCollection[key] = "#{newCollection[key]}, #{data[0].to_s}"
   }
-  puts newCollection
+   newCollection
 end
 
 schools =
