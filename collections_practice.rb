@@ -88,7 +88,7 @@ def organize_schools(collection)
     by_location
 end
 
-schools =
+school =
     {
       "flatiron school bk" => {
         :location => "NYC"
@@ -110,6 +110,6 @@ schools =
       }
     }
   
-  organize_schools(schools)
+  organize_schools(school)
 
 
