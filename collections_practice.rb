@@ -77,10 +77,7 @@ end
 def organize_schools(collection)
   newCollection = {}
   collection.each {|data| 
-  puts "schools = #{data}"
-    data.each {|key| 
-      puts "TEST= #{data[1]}"
-    }
+    newCollection[:data[1]] => data[0]
   }
   puts newCollection
 end
